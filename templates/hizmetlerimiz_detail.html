@@ -1,0 +1,99 @@
+{% load static %}
+{% block content %}
+
+
+
+
+<section id="servisler" class="feature-one">
+    <div class="container">
+        <div class="row">
+            {% for hizmetler_detail in hizmetler_details %}
+                <div class="col-lg-6">
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/web-design.png' %}" alt=""></a>
+
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_bir }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_bir|safe }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/kurumsal.png' %}" alt=""></a>
+
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_iki }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_iki|safe }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/crm.png' %}" alt=""></a>
+
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_uc }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_uc|safe }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/crm.png' %}" alt=""></a>
+
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_dort }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_dort|safe }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/seo.png' %}" alt=""></a>
+
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_bes }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_bes|safe }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/game.png' %}" alt=""></a>
+
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_altı }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_altı|safe }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                </div><!-- /.col-lg-6 -->
+            {% endfor %}
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.feature-one -->
+
+
+
+
+{% endblock content %}
+
+
+
+
